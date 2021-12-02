@@ -24,8 +24,9 @@ function Testing() {
             return;
         } // dont waste GET attempt with string exceed 100kb limit
 
-        let apikey = "5";
-        // let apikey = "52b16d4b4f1246ee800ea25d1b9fe536";
+        // let apikey = "5"; // false key for error testing
+        let apikey = "52b16d4b4f1246ee800ea25d1b9fe536"; // key tied to my email
+        // let apilang = "zh-cn";
         let apilang = "en-us";
         let apicodec = "MP3";
         let apiformat = "8khz_8bit_mono"; // default is 8khz_8bit_mono
