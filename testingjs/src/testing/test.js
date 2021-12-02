@@ -24,7 +24,8 @@ function Testing() {
             return;
         } // dont waste GET attempt with string exceed 100kb limit
 
-        let apikey = "52b16d4b4f1246ee800ea25d1b9fe536";
+        let apikey = "5";
+        // let apikey = "52b16d4b4f1246ee800ea25d1b9fe536";
         let apilang = "en-us";
         let apicodec = "MP3";
         let apiformat = "8khz_8bit_mono"; // default is 8khz_8bit_mono
@@ -56,7 +57,13 @@ function Testing() {
             return (
                 <p>no audio currently</p>
             )
-        }      
+        }
+
+        if (rcvAudio.substring(0,5) === "ERROR") {
+            return (
+                <p>{rcvAudio}</p>
+            )
+        } // api has its own defined error set
 
         return (
             <div>
