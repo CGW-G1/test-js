@@ -71,8 +71,8 @@ function Testing() {
         <div className='canvass'>
             <div className='displayWindow'>
                 <form onSubmit={handleSubmit}>
-                    <h3>Input text for speech return</h3>
-                    <input type='text' placeholder='Punctuation/numerals ok.' onChange={handleInputChange}></input>                    
+                    <h3>Input text for speech return</h3>                    
+                    <textarea name="audiotext" rows="4" cols="50" placeholder='Punctuation/numerals ok.' onChange={handleInputChange}></textarea>
                     <input type='submit' value='Submit' />
                 </form>
                 {playAudio(rcvAudio)}
